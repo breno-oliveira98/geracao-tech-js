@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Projeto JS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <h1>To-Do List App</h1>
+        <p>Organize suas tarefas de forma simples e eficaz.</p>
+        <input type="text" placeholder="Pesquisar por título">
+    </header>
+
+    <section class="todo-list">
+        <h2>Minha To-Do List</h2>
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo">
+        <label for="new-task">Descrição</label>
+        <textarea id="new-task" placeholder="Adicionar nova tarefa" rows="3"></textarea>
+        <button id="add-task">Adicionar</button>
+    </section>
+
+    <div class="div-tasks">
+        <ul id="tasks"></ul>
+    </div>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>

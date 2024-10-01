@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.header {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 20px 60px;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+.header input {
+    width: 90%;
+    height: 60px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #DEDEDE;
+    padding-left: 10px;
+}
+
+
+.todo-list {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.todo-list h2 {
+    text-align: center;
+    color: #333;
+}
+
+
+
+.todo-list textarea, .todo-list input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+    outline: none;
+    transition-duration: 200ms;
+}
+
+.todo-list textarea:focus, .todo-list input:focus {
+    border-color: #007bff;
+}
+
+.todo-list button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.todo-list button:hover {
+    background-color: #218838;
+}
+
+.todo-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.todo-list li:last-child {
+    border-bottom: none;
+}
+
+.todo-list .remove {
+    color: #dc3545;
+    cursor: pointer;
+}
+
+.todo-list .remove:hover {
+    text-decoration: underline;
+}
+
+.div-tasks {
+    width: 100vw;
+    height: auto;
+    padding: 0 40px;
+}
+
+#tasks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#tasks li {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 5px 2px #00000071;
+}
+
+#tasks h2, #tasks p {
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actions box-icon {
+    fill: #8f8f8f;
+    cursor: pointer;
+}
+.actions box-icon:hover {
+    fill: #dc3545;
+}
