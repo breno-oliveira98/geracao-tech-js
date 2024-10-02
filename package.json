@@ -1,16 +1,16 @@
 {
   "name": "geracao-tech",
   "version": "1.0.0",
-  "description": "",
+  "description": "```bash\r npm i json-server@0.17.4\r ```\r ## iniciar a api com json server\r ```bash\r npx json-server <nome-do-arquivo.json> --watch --port 3000\r ```",
   "main": "index.js",
   "scripts": {
-    "api": "npx json-server api.json --watch --port 3001",
+    "api": "npx json-server api.json --watch --port 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^0.17.4"
+    "json-server": "^1.0.0-beta.3"
   }
 }
